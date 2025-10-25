@@ -1,9 +1,9 @@
-Light Monitoring IoT System
+## Light Monitoring IoT System
 
 End-to-end real-time IoT light monitoring system:
 ESP32 collects sensor data, publishes to AWS IoT Core via MQTT, stores in MongoDB Atlas, and uses Python and Dash for data aggregation, analysis, and interactive visualization.
 
-Light Exposure in the Lobby
+# Light Exposure in the Lobby
 
 This project monitors light levels in the NIC building lobby.
 
