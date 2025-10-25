@@ -8,8 +8,11 @@ This project demonstrates a complete IoT pipeline for monitoring light exposure.
 ### Key Highlights:
 
 Real-time light monitoring with automated data collection.
+
 Cloud integration using AWS IoT Core.
+
 Efficient storage and query with MongoDB Atlas.
+
 Interactive visualization and analysis using Python and Dash.
 
 
@@ -27,8 +30,11 @@ The system implements an end-to-end real-time IoT light monitoring pipeline. The
 #### Components Used:
 
 ESP32 Microcontroller
+
 LM393 Light Sensor
+
 Solderless Breadboard
+
 Jumper Wires
 
 #### Sensor Pin Connections:
