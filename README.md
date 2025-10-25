@@ -1,88 +1,28 @@
 # Light Monitoring IoT System
+## Project Overview
 
-End-to-end real-time IoT light monitoring system:
-ESP32 collects sensor data, publishes to AWS IoT Core via MQTT, stores in MongoDB Atlas, and uses Python and Dash for data aggregation, analysis, and interactive visualization.
+### End-to-end Real-Time IoT Light Monitoring System
 
-### Light Exposure in the Lobby
+This project demonstrates a complete IoT pipeline for monitoring light exposure. The system uses an ESP32 microcontroller with an LM393 light sensor to collect real-time light data, publishes it to AWS IoT Core via MQTT, stores it in MongoDB Atlas, and uses Python and Dash for aggregation, analysis, and interactive visualization.
 
-This project monitored light levels in the lobby.
+### Key Highlights:
+Real-time light monitoring with automated data collection.
+Cloud integration using AWS IoT Core.
+Efficient storage and query with MongoDB Atlas.
+Interactive visualization and analysis using Python and Dash.
 
-Sensor: LM393 light sensor
-Output: Digital binary signal (0 = high, 1 = low) based on a reference voltage threshold
-Data Collection: From 13:00 PM to 17:00 PM in one day
-Storage & Analysis: Data stored in MongoDB Atlas and analyzed using aggregation pipelines
+
+### System Architecture
+<img width="1162" height="617" alt="image" src="https://github.com/user-attachments/assets/a80d908e-0586-48bc-a2af-b07c2a26f91d" />
+
+### Dataflow
+<img width="1262" height="835" alt="image" src="https://github.com/user-attachments/assets/abb3c97e-7447-467e-96dc-7cdeebc54684" />
 
 ### Hardware Setup
-
-LM393 sensor → ESP32 connection:
-##### Sensor Pin	##### ESP32 Pin
-VCC	                3.3V
-GND	                GND
-DO	                GPIO 34
-
-Connections made using a solderless breadboard
-ESP32 reads binary output every minute, timestamps it, and sends data over WiFi to MongoDB Atlas
-
-### IoT System Data Flow
-
-LM393 sensor detects light and outputs digital signal.
-ESP32 reads signal, formats with timestamp, connects to WiFi.
-MongoDB Atlas stores readings in the light_readings collection.
-Python/Dash scripts retrieve data for aggregation and interactive visualization.
+#### Components Used:
+ESP32 Microcontroller
+LM393 Light Sensor
+Solderless Breadboard
+Jumper Wires
 
 
-
-# Retrieve all documents
-for doc in collection.find():
-    print(doc)
-
-
-Detailed analysis, aggregation pipelines, and visualizations are available in analysis_notebook.ipynb
-.
-
-Project Structure
-Light_Monitoring_IoT_AWS/
-├── thonny_main.py          # ESP32 data collection script
-├── atlas_iot.py            # AWS IoT communication
-├── viz.py                  # Visualization scripts
-├── analysis_notebook.ipynb # Jupyter Notebook for analysis
-├── .gitignore
-├── requirements.txt
-├── credentials_thonny.py   # Local only
-└── credentials2.py         # Local only
-
-Setup Instructions
-
-Clone the repository:
-
-git clone https://github.com/ssnsii/Light_Monitoring_IoT_AWS.git
-cd Light_Monitoring_IoT_AWS
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Add AWS IoT and MongoDB credentials locally (not in GitHub).
-
-Run ESP32 data collection:
-
-python thonny_main.py
-
-
-Analyze and visualize data:
-
-python viz.py
-# or
-jupyter notebook analysis_notebook.ipynb
-
-Highlights
-
-Real-time IoT monitoring from sensor to cloud
-
-Interactive visualization of lobby light levels
-
-Optimized database queries using indexes and aggregation pipelines
-
-End-to-end integration: hardware, cloud, database, and analytics
