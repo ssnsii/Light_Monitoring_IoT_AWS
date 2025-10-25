@@ -89,6 +89,7 @@ The ESP32 will read the LM393 sensor every minute and publish data to AWS IoT Co
 
 5. Run Data Analysis & Visualization
 
+```
 python viz.py
-
+```
 This will launch a Dash web dashboard to visualize light intensity over time.
