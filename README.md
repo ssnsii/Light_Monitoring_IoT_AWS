@@ -13,7 +13,7 @@ Interactive visualization and analysis using Python and Dash.
 
 
 ### System Architecture
-<img width="1162" height="617" alt="image" src="https://github.com/user-attachments/assets/a80d908e-0586-48bc-a2af-b07c2a26f91d" />
+### <img width="1162" height="617" alt="image" src="https://github.com/user-attachments/assets/a80d908e-0586-48bc-a2af-b07c2a26f91d" />
 
 ### Dataflow
 <img width="1262" height="835" alt="image" src="https://github.com/user-attachments/assets/abb3c97e-7447-467e-96dc-7cdeebc54684" />
