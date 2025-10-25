@@ -1,0 +1,5 @@
+pymongo==4.7.1
+paho-mqtt==1.6.1
+dash==2.15.0
+plotly==5.22.0
+matplotlib==3.8.1

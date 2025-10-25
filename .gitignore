@@ -1,0 +1,14 @@
+# Ignore credentials
+credentials_thonny.py
+credentials2.py
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS or editor files
+.DS_Store
+Thumbs.db
