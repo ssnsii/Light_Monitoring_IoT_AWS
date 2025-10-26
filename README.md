@@ -72,28 +72,28 @@ Visualization: Dash, Plotly
 
 ## Setup & Running Instructions
 
-1. Clone the Repository
+### 1. Clone the Repository
 
 ```
 git clone https://github.com/ssnsii/Light_Monitoring_IoT_AWS.git
 cd Light_Monitoring_IoT_AWS
 ```
 
-3. Configure Credentials
+### 2. Configure Credentials
 
 Add your AWS IoT Core credentials and MongoDB connection details in credentials_thonny.py (local only).
 
-3. Run the ESP32 Firmware
+### 3. Run the ESP32 Firmware
 
 Flash thonny_main.py (or your ESP32 script) onto the ESP32 using Thonny.
 
 Ensure the device connects to your Wi-Fi network.
 
-4. Collect & Publish Data
+### 4. Collect & Publish Data
 
 The ESP32 will read the LM393 sensor every minute and publish data to AWS IoT Core, which forwards it to MongoDB Atlas.
 
-5. Run Data Analysis & Visualization
+### 5. Run Data Analysis & Visualization
 
 ```
 python viz.py
