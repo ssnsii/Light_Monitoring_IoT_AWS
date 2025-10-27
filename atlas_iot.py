@@ -1,8 +1,7 @@
 """
 This script subscribes to an AWS IoT Core MQTT topic and stores received light readings into MongoDB Atlas.
 
-MongoDB credentials and AWS IoT certificate paths are stored in a separate local file `credentials2.py` which 
-is not uploaded to GitHub for security reasons.
+MongoDB credentials and AWS IoT certificate paths are stored in a separate local file `credentials2.py`.
 """
 
 import pymongo
