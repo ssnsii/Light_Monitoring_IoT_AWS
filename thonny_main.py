@@ -14,8 +14,7 @@ import ssl
 import ntptime
 from credentials_thonny import SSID, PASS, AWS_ENDPOINT, CA_CERT_FILE, CLIENT_CERT_FILE, CLIENT_KEY_FILE
 
-# Wi-Fi and AWS IoT credentials are imported from a separate local file (credentials_thonny.py)
-# that is not uploaded to GitHub for security reasons.
+# Wi-Fi and AWS IoT credentials are imported from a separate local file (credentials_thonny.py).
 
 # Wi-Fi credentials
 # SSID = b''
