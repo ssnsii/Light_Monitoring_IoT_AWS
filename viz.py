@@ -1,8 +1,7 @@
 """
 Dash app for visualizing light readings from MongoDB.
 
-MongoDB credentials are stored in a separate file `credentials2.py` 
-which is not uploaded to GitHub for security reasons.
+MongoDB credentials are stored in a separate file `credentials2.py`
 """
 
 # Import libraries
